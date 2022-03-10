@@ -114,9 +114,9 @@ body {
 /* LG */
 @media (min-width: 1024px) {
   body {
-    background: url("/assets/images/bottom-image.svg") right bottom no-repeat,
-      url("/assets/images/top-image.svg") left top no-repeat,
-      url("/assets/images/rocket.svg") right center no-repeat;
+    background: url("/assets/img/bottom-image.svg") right bottom no-repeat,
+      url("/assets/img/top-image.svg") left top no-repeat,
+      url("/assets/img/rocket.svg") right center no-repeat;
     background-size: contain, contain, 50rem;
   }
   .container {
