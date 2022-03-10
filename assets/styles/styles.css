@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-countdown {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-countdown h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--purple);
+  margin-top: 5px;
+}
+
+.countdown {
+  display: flex;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.countdown div {
+  margin: 30px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time-number {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 4.3rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.time-number::after {
+  content: ":";
+  position: absolute;
+  top: 50%;
+  transform: translate(150%, -50%);
+}
+
+.time:last-child .time-number::after {
+  content: "";
+}
+
+.time-title {
+  text-transform: capitalize;
+  color: var(--light-grey);
+}
+
+.primary-button {
+  outline: none;
+  background-color: var(--purple);
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.primary-button:hover {
+  transform: translateY(-7px);
+}
+
+/* SM */
+@media (min-width: 640px) {
+}
+
+/* MD */
+@media (min-width: 768px) {
+}
+
+/* LG */
+@media (min-width: 1024px) {
+  body {
+    background: url("/assets/images/bottom-image.svg") right bottom no-repeat,
+      url("/assets/images/top-image.svg") left top no-repeat,
+      url("/assets/images/rocket.svg") right center no-repeat;
+    background-size: contain, contain, 50rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
